@@ -1,1 +1,1 @@
-this is my first readme in C
+hello world readme
