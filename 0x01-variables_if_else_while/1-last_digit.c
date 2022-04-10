@@ -24,6 +24,6 @@ int main(void)
 		string = "and is greater than 5";
 	else if (n % 10 < 6)
 		string = "and is less than 6 and not 0";
-	printf("Last digit of %d %s\n", n, n % 10, string);
+	printf("Last digit of %d is %d %s\n", n, n % 10, string);
 	return (0);
 }
