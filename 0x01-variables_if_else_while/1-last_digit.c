@@ -3,27 +3,24 @@
 #include <stdio.h>
 
 /**
- * main - Entry point of code
+ * main - Entry point
  *
- * Description: Gets the last number and checks if is positive zero of negative
- *
- * Return: Always 0
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int n;
-	char *string;
+	int n, last_digit;
 
 	srand(time(0));
-	n = rand() - REAND_MAX / 2;
+	n = rand() - RAND_MAX / 2;
+	last_digit = n % 10;
+	if (last_digit > 5)
+	printf("Last digit of %d and is greater than 5\n", n, last_digit);
+	else if (last_digit == 0)
+	printf("Last digit of %d is %d and is 0\n", n, last_digit);
+	else
+	printf("Last digit of %d is %d and is less than 6 and not 0\n", last_digit);
 
-	if (n % 10 == 0)
-		string = "and is 0";
-	else if (n % 10 > 5)
-		string = "and is greater than 5";
-	else if (n % 10 < 6)
-		string = "and is less than 6 and not 0";
-	printf("Last digit of %d is %d %s\n", n, n % 10, string);
-	return (0);
+	retirn (0);
 }
